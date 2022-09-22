@@ -70,7 +70,7 @@ model1 <- aov(WORDSUM~DEGREE,data=data)
 summary.aov(model1)
 ```
 
-Based on the inferential results, the P value is 0.000236  smaller than 0.05 therefore we reject the null hypothesis. There is a significant difference in average score on the WORDSUM test between at least two levels of DEGREE  
+Based on the inferential results, the P value is 0.000236  smaller than 0.05 therefore we reject the null hypothesis. There is a significant difference in average score on the WORDSUM test between at least two levels of DEGREE.   
 
 
 ```{r}
@@ -78,8 +78,14 @@ Based on the inferential results, the P value is 0.000236  smaller than 0.05 the
 par(mar = c(3, 17, 2, 2))
 plot(TukeyHSD(model1),las=2)
 ```
+The two that reflect a significant difference are High School to Graduate and LT High School to Graduate. These two levels of education display a lower average WORDSUM score, resulting in a lower family-wise confidence level. DEGREES with higher education display a high confidence level. 
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
+
+
+
