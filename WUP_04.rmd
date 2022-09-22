@@ -69,12 +69,15 @@ The numerical descriptive results shows that based on DEGREE there is a signific
 model1 <- aov(WORDSUM~DEGREE,data=data)
 summary.aov(model1)
 ```
+
+Based on the inferential results, the P value is 0.000236  smaller than 0.05 therefore we reject the null hypothesis. There is a significant difference in average score on the WORDSUM test between at least two levels of DEGREE  
+
+
 ```{r}
 #we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
 par(mar = c(3, 17, 2, 2))
 plot(TukeyHSD(model1),las=2)
 ```
-
 
 
 # Discussion and Conclusion
