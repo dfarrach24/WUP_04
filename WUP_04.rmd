@@ -28,7 +28,7 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 
 
-We try to predict WORDSUM based on degree. WORDSUM is numerical and DEGREE is categorical, therefore the method used will be nuerical categorical. 
+We try to predict WORDSUM based on degree. WORDSUM is numerical and DEGREE is categorical, therefore the method used will be numerical categorical. 
 
 # Results
 
@@ -39,6 +39,17 @@ We try to predict WORDSUM based on degree. WORDSUM is numerical and DEGREE is ca
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+par(mar = c(5, 15, 5, 2))
+boxplot(WORDSUM~DEGREE,data=data)
+unique(data$DEGREE)
+```
+
+The X axis represents the level of education and the Y axis represents WORDSUM. Based on the graphical descriptive results, the level of DEGREE with the highest WORDSUM score are the graduates, and the lowest WORDSUM scores are high school and less than high school. Therefore there is a difference in WORDSUM based on education. 
+
+
+
 
 ### Numerical Descriptive Results
 
